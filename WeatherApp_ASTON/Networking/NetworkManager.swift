@@ -33,7 +33,6 @@ final class NetworkManager<T: Codable> {
                 print(String(describing: err))
                 completion(.failure(.decodingError(err: err.localizedDescription)))
             }
-            
         }.resume()
     }
 }
