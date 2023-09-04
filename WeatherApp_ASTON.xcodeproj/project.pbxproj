@@ -20,6 +20,9 @@
 		84EB19132AA4AE5F005BB0FF /* DailyWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB19122AA4AE5F005BB0FF /* DailyWeather.swift */; };
 		84EB19152AA4F8F9005BB0FF /* Temperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB19142AA4F8F9005BB0FF /* Temperature.swift */; };
 		84EB19172AA4FF13005BB0FF /* CityVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB19162AA4FF13005BB0FF /* CityVM.swift */; };
+		84EB9A782AA5D38400AE3B7A /* MenuHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB9A772AA5D38400AE3B7A /* MenuHeader.swift */; };
+		84EB9A7A2AA5D51A00AE3B7A /* CityNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB9A792AA5D51A00AE3B7A /* CityNameView.swift */; };
+		84EB9A7C2AA5D66100AE3B7A /* TodayWeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB9A7B2AA5D66100AE3B7A /* TodayWeatherView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +40,9 @@
 		84EB19122AA4AE5F005BB0FF /* DailyWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyWeather.swift; sourceTree = "<group>"; };
 		84EB19142AA4F8F9005BB0FF /* Temperature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Temperature.swift; sourceTree = "<group>"; };
 		84EB19162AA4FF13005BB0FF /* CityVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityVM.swift; sourceTree = "<group>"; };
+		84EB9A772AA5D38400AE3B7A /* MenuHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuHeader.swift; sourceTree = "<group>"; };
+		84EB9A792AA5D51A00AE3B7A /* CityNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityNameView.swift; sourceTree = "<group>"; };
+		84EB9A7B2AA5D66100AE3B7A /* TodayWeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayWeatherView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +120,9 @@
 		845C734A2AA36BAD00EE531E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				84EB9A772AA5D38400AE3B7A /* MenuHeader.swift */,
+				84EB9A792AA5D51A00AE3B7A /* CityNameView.swift */,
+				84EB9A7B2AA5D66100AE3B7A /* TodayWeatherView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -142,6 +151,8 @@
 			dependencies = (
 			);
 			name = WeatherApp_ASTON;
+			packageProductDependencies = (
+			);
 			productName = WeatherApp_ASTON;
 			productReference = 845C73372AA3685C00EE531E /* WeatherApp_ASTON.app */;
 			productType = "com.apple.product-type.application";
@@ -170,6 +181,8 @@
 				Base,
 			);
 			mainGroup = 845C732E2AA3685C00EE531E;
+			packageReferences = (
+			);
 			productRefGroup = 845C73382AA3685C00EE531E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -205,8 +218,11 @@
 				84EB190B2AA36DD9005BB0FF /* NetworkManager.swift in Sources */,
 				845C734F2AA36C8800EE531E /* API.swift in Sources */,
 				845C733B2AA3685C00EE531E /* WeatherApp_ASTONApp.swift in Sources */,
+				84EB9A7C2AA5D66100AE3B7A /* TodayWeatherView.swift in Sources */,
+				84EB9A782AA5D38400AE3B7A /* MenuHeader.swift in Sources */,
 				84EB19152AA4F8F9005BB0FF /* Temperature.swift in Sources */,
 				84EB19132AA4AE5F005BB0FF /* DailyWeather.swift in Sources */,
+				84EB9A7A2AA5D51A00AE3B7A /* CityNameView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
