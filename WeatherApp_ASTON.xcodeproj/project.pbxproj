@@ -85,8 +85,7 @@
 				845C734A2AA36BAD00EE531E /* Views */,
 				845C73492AA36B9B00EE531E /* Models */,
 				845C73482AA36B9200EE531E /* Networking */,
-				845C733A2AA3685C00EE531E /* WeatherApp_ASTONApp.swift */,
-				845C733C2AA3685C00EE531E /* ContentView.swift */,
+				84EB9A832AA601C400AE3B7A /* App */,
 				845C733E2AA3685E00EE531E /* Assets.xcassets */,
 				845C73402AA3685E00EE531E /* Preview Content */,
 			);
@@ -142,6 +141,15 @@
 				84EB19162AA4FF13005BB0FF /* CityVM.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		84EB9A832AA601C400AE3B7A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				845C733A2AA3685C00EE531E /* WeatherApp_ASTONApp.swift */,
+				845C733C2AA3685C00EE531E /* ContentView.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

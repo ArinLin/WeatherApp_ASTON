@@ -10,7 +10,7 @@ import CoreLocation
 
 final class CityVM: ObservableObject {
     @Published var weather = WeatherResponse.empty()
-    @Published var city: String = "Moscow" {
+    @Published var city: String = "Москва" {
         didSet {
             getLocation()
         }
@@ -112,49 +112,6 @@ final class CityVM: ObservableObject {
             case .failure(let err):
                 print(err)
             }
-        }
-    }
-    
-    func getAnimationFor(icon: String) -> String {
-        switch icon {
-        case "01d":
-            return "dayClearSky"
-        case "01n":
-            return "nightClearSky"
-        case "02d":
-            return "dayFewClouds"
-        case "02n":
-            return "nightFewClouds"
-        case "03d":
-            return "dayScatteredClouds"
-        case "03n":
-            return "nightScatteredClouds"
-        case "04d":
-            return "davBrokenClouds"
-        case "04n":
-            return "nightBrokenClouds"
-        case "09d":
-            return "dayShowerRains"
-        case "09n":
-            return "nightShowerRains"
-        case "10d":
-            return "dayRain"
-        case "10n":
-            return "nightRain"
-        case "11d":
-            return "dayThunderstorm"
-        case "11n":
-            return "nightThunderstorm"
-        case "13d":
-            return "daySnow"
-        case "13n":
-            return "nightSnow"
-        case "50d":
-            return "dayMist"
-        case "50n":
-            return "dayMist"
-        default:
-            return "dayClearSky"
         }
     }
     

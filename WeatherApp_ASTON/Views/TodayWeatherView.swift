@@ -12,7 +12,7 @@ struct TodayWeatherView: View {
     @ObservedObject var cityVM: CityVM
     var body: some View {
         VStack(spacing: 10) {
-            Text ("Today")
+            Text ("Сегодня")
                 .font(.largeTitle)
                 .bold()
             HStack(spacing: 20) {
