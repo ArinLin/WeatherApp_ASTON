@@ -21,7 +21,7 @@ struct DailyWeatherView: View {
     
     private func dailyCell(weather: DailyWeather) -> some View {
         HStack {
-            Text(cityVM.getDayFor(timestamp: weather.dt).uppercased ())
+            Text(cityVM.getDayFor(timestamp: weather.dt).uppercased())
                 .frame(width: 50)
             Spacer()
             Text("\(cityVM.getTempFor(temp: weather.temp.max)) | \(cityVM.getTempFor(temp: weather.temp.min))°F")
@@ -29,7 +29,7 @@ struct DailyWeatherView: View {
             Spacer()
             cityVM.getWeatherIconFor(icon: weather.weather.count > 0 ? weather.weather[0].icon : "sun.max.fill")
         }
-        .foregroundColor (.white)
+        .foregroundColor(.white)
         .padding(.horizontal, 40)
         .padding(.vertical, 15)
         .background(RoundedRectangle(cornerRadius: 5).fill((LinearGradient(gradient: Gradient(colors:[Color.blue.opacity(0.5), Color.blue]), startPoint: .top, endPoint: .bottom)).opacity(0.3)))

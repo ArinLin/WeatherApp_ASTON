@@ -24,14 +24,14 @@ struct HourlyWeatherView: View {
     
     private func getHourlyView(hour: String, image: Image, temp: String) -> some View {
         VStack(spacing: 20) {
-            Text (hour)
+            Text(hour)
             image
                 .foregroundColor (.yellow)
-            Text (temp)
+            Text(temp)
         }
         .foregroundColor(.white)
         .padding()
-        .background(RoundedRectangle(cornerRadius: 5).fill((LinearGradient(gradient: Gradient(colors:[Color.blue.opacity(0.5), Color.blue]), startPoint: .top, endPoint: .bottom)).opacity(0.3)))
+        .background(RoundedRectangle(cornerRadius: 25).fill((LinearGradient(gradient: Gradient(colors:[Color.blue.opacity(0.5), Color.blue]), startPoint: .top, endPoint: .bottom)).opacity(0.3)))
         .shadow(color: Color.white.opacity(0.1), radius: 2, x: -2, y: -2)
         .shadow(color: Color.black.opacity(0.2), radius: 2, x: 2, y: 2)
     }

@@ -20,7 +20,7 @@ struct MenuHeader: View {
                 cityVM.city = searchTerm
             } label: {
                 ZStack {
-                    RoundedRectangle(cornerRadius: 10)
+                    RoundedRectangle(cornerRadius: 25)
                         .fill(Color.blue)
                     Image(systemName: "location.fill")
                 }
@@ -29,13 +29,14 @@ struct MenuHeader: View {
         }
         .foregroundColor(.white)
         .padding()
-        .background(ZStack (alignment: .leading) {
-            Image(systemName: "magnifyingglass")
-                .foregroundColor(.white)
-                .padding(.leading, 10)
-            RoundedRectangle(cornerRadius: 10)
-                .fill(Color.blue.opacity (0.5))
-        })
+        .background(
+            ZStack(alignment: .leading) {
+                Image(systemName: "magnifyingglass")
+                    .foregroundColor(.white)
+                    .padding(.leading, 10)
+                RoundedRectangle(cornerRadius: 30)
+                    .fill(Color.blue.opacity (0.3))
+            })
     }
 }
 
